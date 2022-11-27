@@ -5,7 +5,7 @@ import (
 )
 
 type AdminReq struct {
-	g.Meta   `path:"/backend/admin/add" tags:"Admin" method:"post" summary:"You first admin api"`
+	g.Meta   `path:"/backend/admin/add" tags:"管理员" method:"post" summary:"You first admin api"`
 	Name     string `json:"name" v:"required#用户名不能为空" dc:"用户名"`
 	Password string `json:"password"    v:"required#密码不能为空" dc:"密码"`
 	RoleIds  string `json:"role_ids"    dc:"角色ids"`
@@ -45,7 +45,7 @@ type AdminGetListCommonRes struct {
 }
 
 type AdminGetInfoReq struct {
-	g.Meta `path:"/backend/admin/info" method:"get"`
+	g.Meta `path:"/backend/admin/info" tags:"管理员" method:"get"`
 }
 
 type AdminGetInfoRes struct {

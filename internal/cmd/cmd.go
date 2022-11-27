@@ -33,6 +33,7 @@ var (
 					controller.Admin.Delete, // 管理员
 					controller.Admin.List,   // 管理员
 					controller.Login,        // 登录
+					controller.Role,
 				)
 				// Special handler that needs authentication.
 				group.Group("/", func(group *ghttp.RouterGroup) {

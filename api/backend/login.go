@@ -19,7 +19,7 @@ type LoginDoRes struct {
 }
 
 type RefreshTokenReq struct {
-	g.Meta `path:"/backend/refresh_token" method:"post"`
+	g.Meta `path:"/backend/refresh_token" tags:"登录" method:"post"`
 }
 
 type RefreshTokenRes struct {
@@ -28,7 +28,7 @@ type RefreshTokenRes struct {
 }
 
 type LogoutReq struct {
-	g.Meta `path:"/backend/logout" method:"post"`
+	g.Meta `path:"/backend/logout"  tags:"登录" method:"post"`
 }
 
 type LogoutRes struct {

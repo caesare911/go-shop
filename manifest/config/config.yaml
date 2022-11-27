@@ -12,5 +12,5 @@ database:
     ctxKeys: [ "RequestId" ]
 
   default:  # todo  修改成自己的密码
-    link: "mysql:root:2BaDgEMGQj@tcp(127.0.0.1:3306)/shop"
+    link: "mysql:root:111222tc@tcp(127.0.0.1:3306)/goshop"
     debug: true
